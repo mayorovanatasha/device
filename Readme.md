@@ -1,7 +1,7 @@
 # Личный проект «{{projectTitle}}»
 
 * Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Сайт: [Проект Девайс](https://mayorovanatasha.github.io/device/)
 
 ---
 
