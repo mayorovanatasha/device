@@ -10,114 +10,146 @@
 <body>
   <h1 class="visually-hidden">Интернет-магазин гаджетов</h1>
   <header class="page-header">
-    <a class="header-logo logo" aria-current="page" href="#">
-      <img src="images/logo.svg" width="145" height="36" alt="Логотип компании Девайс.">
-    </a>
-    <div class="navigation-user-wrap">
-      <form class="search-form" role="search" method="get" action="/search">
-        <input class="search-form-text" type="search" name="search-text" placeholder="Текст поиска" />
-        <button class="search-form-button">Найти</button>
-      </form>
-      <ul class="navigation-user">
-        <li class="navigation-user-item">
-          <a class="navigation-user-link icon-login" href="#">Войти</a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link icon-compare" href="#">Сравнить</a>
-        </li>
-        <li class="navigation-user-item cart">
-          <a class="navigation-user-link icon-cart" href="#"><span class="cart-counter">2</span>Корзина</a>
-        </li>
-      </ul>
+    <div class="container header-container">
+      <a class="header-logo logo" aria-current="page" href="#">
+        <img src="images/logo.svg" width="145" height="36" alt="Логотип компании Девайс.">
+      </a>
+      <div class="navigation-user-wrap">
+        <form class="search-form" role="search" method="get" action="/search">
+          <input class="search-form-text" type="search" name="search-text" placeholder="Текст поиска" />
+          <button class="search-form-button">Найти</button>
+        </form>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link icon-login" href="#">Войти</a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link icon-compare" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-user-item cart">
+            <a class="navigation-user-link icon-cart" href="#"><span class="cart-counter">2</span>Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item navigation-catalog">
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <button class="menu-dropdown"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="navigation-dropdown">
+              <ul class="navigation-dropdown-list list-reset">
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link" href="https://nemtsevk.github.io/device/#">Виртуальная
+                    реальность</a>
+                </li>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link" href="https://nemtsevk.github.io/device/catalog.html">Моноподы для
+                    cелфи</a>
+                </li>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link" href="https://nemtsevk.github.io/device/#">Экшн-камеры</a>
+                </li>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link" href="https://nemtsevk.github.io/device/#">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link" href="https://nemtsevk.github.io/device/#">Умные часы</a>
+                </li>
+                <li class="navigation-dropdown-item">
+                  <a class="navigation-dropdown-link" href="https://nemtsevk.github.io/device/#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-          <button class="menu-dropdown"><span class="visually-hidden">Открыть меню</span></button>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="main-index main-container">
     <section class="hero">
-      <div class="slider-hero">
-        <h2 class="visually-hidden">Промо-слайдер</h2>
-        <ol class="slider-hero-list">
-          <li class="slider-hero-item active">
-            <h3 class="visually-hidden">Первый товар — квадрокоптер</h3>
-            <div class="slider-hero-photo">
-              <img class="slider-hero-image" src="images/main-slider-photo-1.png" width="560" height="560"
-                alt="Черно-белый квадрокоптер с камерой-лазером.">
-            </div>
-            <div class="slider-hero-content">
-              <p class="slider-hero-title">Порхает как бабочка, жалит как пчела!</p>
-              <p class="slider-hero-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                замаскированным под стандартную камеру.</p>
-              <a class="button" href="#">Подробнее</a>
-              <h4 class="visually-hidden">Характеристики</h4>
-              <dl class="slider-hero-parameter">
-                <div class="parameter-item">
-                  <dt class="parameter-key">Дальность полета</dt>
-                  <dd class="parameter-value">800 м</dd>
-                </div>
-                <div class="parameter-item">
-                  <dt class="parameter-key">Радиус поражения</dt>
-                  <dd class="parameter-value">50 м</dd>
-                </div>
-              </dl>
-            </div>
-          </li>
-        </ol>
-        <div class="slider-controls">
-          <button class="slider-arrow arrow-prev" type="button" title="Предыдущий товар" aria-label="Предыдущий товар"></button>
-          <button class="slider-arrow arrow-next" type="button" title="Следующий товар" aria-label="Следующий товар"></button>
+      <div class="container">
+        <div class="slider-hero">
+          <h2 class="visually-hidden">Промо-слайдер</h2>
+          <ol class="slider-hero-list">
+            <li class="slider-hero-item active">
+              <h3 class="visually-hidden">Первый товар — квадрокоптер</h3>
+              <div class="slider-hero-photo">
+                <img class="slider-hero-image" src="images/main-slider-photo-1.png" width="560" height="560"
+                  alt="Черно-белый квадрокоптер с камерой-лазером.">
+              </div>
+              <div class="slider-hero-content">
+                <p class="slider-hero-title">Порхает как бабочка, жалит как пчела!</p>
+                <p class="slider-hero-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                  замаскированным под стандартную камеру.</p>
+                <a class="button" href="#">Подробнее</a>
+                <h4 class="visually-hidden">Характеристики</h4>
+                <dl class="slider-hero-parameter">
+                  <div class="parameter-item">
+                    <dt class="parameter-key">Дальность полета</dt>
+                    <dd class="parameter-value">800 м</dd>
+                  </div>
+                  <div class="parameter-item">
+                    <dt class="parameter-key">Радиус поражения</dt>
+                    <dd class="parameter-value">50 м</dd>
+                  </div>
+                </dl>
+              </div>
+            </li>
+          </ol>
+          <div class="slider-controls">
+            <button class="slider-arrow arrow-prev" type="button" title="Предыдущий товар"
+              aria-label="Предыдущий товар"></button>
+            <button class="slider-arrow arrow-next" type="button" title="Следующий товар"
+              aria-label="Следующий товар"></button>
+          </div>
+          <ol class="slider-pagination list-reset">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button pagination-button-current" type="button"
+                aria-label="Первый товар"></button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button" aria-label="Второй товар"></button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button" aria-label="Третий товар"></button>
+            </li>
+          </ol>
         </div>
-        <ol class="slider-pagination list-reset">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button pagination-button-current" type="button"
-              aria-label="Первый товар"></button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button" aria-label="Второй товар"></button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button" aria-label="Третий товар"></button>
-          </li>
-        </ol>
       </div>
     </section>
     <section class="categories">
-      <h2 class="visually-hidden">Список категорий каталога</h2>
-      <ul class="categories-list">
-        <li class="categories-item icon-VR">
-          <a class="categories-title" href="#">Виртуальная реальность</a>
-        </li>
-        <li class="categories-item icon-monopod">
-          <a class="categories-title" href="#">Моноподы для селфи</a>
-        </li>
-        <li class="categories-item icon-actioncamera">
-          <a class="categories-title" href="#">Экшн-камеры</a>
-        </li>
-        <li class="categories-item icon-fitbit">
-          <a class="categories-title" href="#">Фитнес-браслеты</a>
-        </li>
-        <li class="categories-item icon-smartwatch">
-          <a class="categories-title" href="#">Умные часы</a>
-        </li>
-        <li class="categories-item icon-quadcopter">
-          <a class="categories-title" href="#">Квадрокоптеры</a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Список категорий каталога</h2>
+        <ul class="categories-list">
+          <li class="categories-item icon-VR">
+            <a class="categories-title" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="categories-item icon-monopod">
+            <a class="categories-title" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="categories-item icon-actioncamera">
+            <a class="categories-title" href="#">Экшн-камеры</a>
+          </li>
+          <li class="categories-item icon-fitbit">
+            <a class="categories-title" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="categories-item icon-smartwatch">
+            <a class="categories-title" href="#">Умные часы</a>
+          </li>
+          <li class="categories-item icon-quadcopter">
+            <a class="categories-title" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="services">
       <ul class="services-nav">
