@@ -1,6 +1,6 @@
 # Личный проект «{{projectTitle}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Наталья Майорова](https://htmlacademy.ru/profile/natashamayorova).
 * Сайт: [Проект Девайс](https://mayorovanatasha.github.io/device/)
 
 ---
